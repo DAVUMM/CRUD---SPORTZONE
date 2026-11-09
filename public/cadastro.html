@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | SportZone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">SPORT<span>ZONE</span></a>
+    <nav class="topnav">
+      <a href="index.html">Voltar ao login</a>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width:850px">
+    <section class="panel">
+      <div class="eyebrow">Faça parte do time</div>
+      <h1>Crie sua conta</h1>
+      <p class="subtitle">Preencha seus dados para fazer parte da SportZone.</p>
+
+      <div id="mensagem" class="notice"></div>
+
+      <form id="formCadastro">
+        <div class="form-grid">
+          <div class="field">
+            <label for="nome">Nome *</label>
+            <input id="nome" required>
+          </div>
+
+          <div class="field">
+            <label for="sobrenome">Sobrenome *</label>
+            <input id="sobrenome" required>
+          </div>
+
+          <div class="field">
+            <label for="cpf">CPF *</label>
+            <input id="cpf" placeholder="000.000.000-00" required maxlength="14">
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail *</label>
+            <input id="email" type="email" required>
+          </div>
+
+          <div class="field">
+            <label for="senha">Senha *</label>
+            <input id="senha" type="password" minlength="6" required>
+          </div>
+
+          <div class="field">
+            <label for="telefone">Telefone *</label>
+            <input id="telefone" type="tel" placeholder="(00) 00000-0000" required>
+          </div>
+
+          <div class="field full">
+            <label for="rua">Rua *</label>
+            <input id="rua" required>
+          </div>
+
+          <div class="field">
+            <label for="cep">CEP *</label>
+            <input id="cep" placeholder="00000-000" required maxlength="9">
+          </div>
+
+          <div class="field">
+            <label for="cidade">Cidade *</label>
+            <input id="cidade" required>
+          </div>
+
+          <div class="field">
+            <label for="estado">Estado *</label>
+            <input id="estado" placeholder="Ex.: SP" maxlength="2" required>
+          </div>
+        </div>
+
+        <button class="btn" type="submit">Finalizar cadastro</button>
+        <a class="btn secondary" href="index.html">Cancelar</a>
+      </form>
+    </section>
+  </main>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo | SportZone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="boas-vindas.html">SPORT<span>ZONE</span></a>
+    <nav class="topnav">
+      <span id="nomeNav"></span>
+      <button class="btn secondary small" onclick="sair()">Sair</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Seu próximo desafio começa aqui</div>
+        <h1>Bem-vindo à <span style="color:var(--orange)">SportZone</span>!</h1>
+        <p id="mensagemBoasVindas">Aqui você encontra inspiração e equipamentos para ir mais longe. Prepare-se para superar seus limites!</p>
+        <div class="inline-actions">
+          <a class="btn" href="index.html" onclick="sair()">Voltar ao início</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="sport-icon">⚽</div>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>ENERGIA</strong>
+        <span>Vista sua motivação</span>
+      </div>
+      <div class="stat">
+        <strong>FOCO</strong>
+        <span>Supere seus limites</span>
+      </div>
+      <div class="stat">
+        <strong>ATITUDE</strong>
+        <span>Entre em campo para vencer</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="boas-vindas.js"></script>
+</body>
+</html>

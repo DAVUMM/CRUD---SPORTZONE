@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração | SportZone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="admin.html">SPORT<span>ZONE</span></a>
+    <nav class="topnav">
+      <span class="badge">ADMINISTRADOR</span>
+      <button class="btn secondary small" id="btnSair">Sair</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-title">
+      <div class="eyebrow">Painel restrito</div>
+      <h1>Administração de usuários</h1>
+      <p class="subtitle">Consulte, edite e remova os cadastros da SportZone.</p>
+    </div>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Usuários cadastrados</h2>
+          <p class="muted" id="contador">Carregando usuários...</p>
+        </div>
+        <div class="searchbar">
+          <input id="buscaCpf" placeholder="Buscar pelo CPF">
+          <button class="btn" id="btnBuscar">Buscar</button>
+          <button class="btn secondary" id="btnLimpar">Limpar</button>
+        </div>
+      </div>
+
+      <div id="mensagem" class="notice"></div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+              <th>Tipo</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaUsuarios"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="painelEdicao">
+      <div class="eyebrow">Gerenciar cadastro</div>
+      <h2>Editar usuário</h2>
+      <form id="formEdicao">
+        <input type="hidden" id="editId">
+        <div class="form-grid">
+          <div class="field">
+            <label for="editNome">Nome</label>
+            <input id="editNome" required>
+          </div>
+          <div class="field">
+            <label for="editSobrenome">Sobrenome</label>
+            <input id="editSobrenome" required>
+          </div>
+          <div class="field">
+            <label for="editCpf">CPF</label>
+            <input id="editCpf" required>
+          </div>
+          <div class="field">
+            <label for="editEmail">E-mail</label>
+            <input id="editEmail" type="email" required>
+          </div>
+          <div class="field">
+            <label for="editSenha">Senha</label>
+            <input id="editSenha" type="text" required minlength="6">
+          </div>
+          <div class="field">
+            <label for="editTelefone">Telefone</label>
+            <input id="editTelefone" required>
+          </div>
+          <div class="field full">
+            <label for="editRua">Rua</label>
+            <input id="editRua" required>
+          </div>
+          <div class="field">
+            <label for="editCep">CEP</label>
+            <input id="editCep" required>
+          </div>
+          <div class="field">
+            <label for="editCidade">Cidade</label>
+            <input id="editCidade" required>
+          </div>
+          <div class="field">
+            <label for="editEstado">Estado</label>
+            <input id="editEstado" required maxlength="2">
+          </div>
+        </div>
+        <div class="inline-actions">
+          <button class="btn" type="submit">Salvar alterações</button>
+          <button class="btn secondary" type="button" id="btnCancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body> 
+</html>

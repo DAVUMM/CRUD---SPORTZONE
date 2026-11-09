@@ -1,0 +1,13 @@
+{
+  "name": "sportzone-form-crud-cpf",
+  "version": "1.0.0",
+  "description": "Sistema SportZone com login, cadastro e administração de usuários",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "json-server": "^0.17.4"
+  }
+}

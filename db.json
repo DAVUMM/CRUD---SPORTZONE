@@ -1,0 +1,32 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Administrador",
+      "sobrenome": "SportZone",
+      "cpf": "000.000.000-00",
+      "email": "admin@sportzone.com",
+      "senha": "Admin@123",
+      "rua": "Rua Principal",
+      "cep": "00000-000",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "(11) 99999-0000",
+      "admin": true
+    },
+    {
+      "nome": "Yokoagafafa",
+      "sobrenome": "Bruno",
+      "cpf": "22744729749",
+      "email": "davi@gay",
+      "senha": "123456",
+      "rua": "benedito gualvao",
+      "cep": "91048-429",
+      "cidade": "mogi guaçu",
+      "estado": "SP",
+      "telefone": "1124324313",
+      "admin": false,
+      "id": 2
+    }
+  ]
+}
