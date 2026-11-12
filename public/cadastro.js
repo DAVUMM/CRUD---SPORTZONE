@@ -10,8 +10,12 @@ document.getElementById('cpf').addEventListener('input', e => {
     e.target.value = v;
 });
 document.getElementById('cep').addEventListener('input', e => {
-    let v = apenasNumeros(e.target.value).slice(0, 8);
-    if (v.length > 5) v = v.slice(0,5) + '-' + v.slice(5);
+    let v = e.target.value.replace(/\D/g, '').slice(0, 8);
+
+    if (v.length > 5) {
+        v = v.slice(0, 5) + '-' + v.slice(5);
+    }
+
     e.target.value = v;
 });
 
